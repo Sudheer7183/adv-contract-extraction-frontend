@@ -1,11 +1,9 @@
 // @ts-nocheck
 import React from 'react';
 import { Column } from 'react-table'
-import { UserInfoCell } from './UserInfoCell'
-import { UserLastLoginCell } from './UserLastLoginCell'
-import { UserTwoStepsCell } from './UserTwoStepsCell'
+
 import { UserActionsCell } from './UserActionsCell'
-import { UserFileOpenCell } from './UserFileOpenCell'
+
 import { UserSelectionCell } from './UserSelectionCell'
 import { UserCustomHeader } from './UserCustomHeader'
 import { UserSelectionHeader } from './UserSelectionHeader'
@@ -17,39 +15,11 @@ const usersColumns: ReadonlyArray<Column<User>> = [
     id: 'selection',
     Cell: ({ ...props }) => <UserSelectionCell id={props.data[props.row.index].id} />,
   },
-  // {
-  //   Header: (props) => <UserCustomHeader tableProps={props} title='Project Name' className='min-w-125px' />,
-  //   id: 'btn',
-  //   Cell: ({...props}) => <UserFileOpenCell id={props.data[props.row.index].id} />,
-  // },
   {
     Header: (props) => <UserCustomHeader tableProps={props} title='Catalog Name' className='min-w-125px' />,
     accessor: 'catalogName',
   },
-  // {
-  //   Header: (props) => <UserCustomHeader tableProps={props} title='TotalFiles' className='min-w-125px' />,
-  //   accessor: 'totalFiles',
-  // },
-  // {
-  //   Header: (props) => (
-  //     <UserCustomHeader tableProps={props} title='Last login' className='min-w-125px' />
-  //   ),
-  //   id: 'last_login',
-  //   Cell: ({...props}) => <UserLastLoginCell last_login={props.data[props.row.index].last_login} />,
-  // },
-  // {
-  //   Header: (props) => (
-  //     <UserCustomHeader tableProps={props} title='Two steps' className='min-w-125px' />
-  //   ),
-  //   id: 'two_steps',
-  //   Cell: ({...props}) => <UserTwoStepsCell two_steps={props.data[props.row.index].two_steps} />,
-  // },
-  // {
-  //   Header: (props) => (
-  //     <UserCustomHeader tableProps={props} title='Joined day' className='min-w-125px' />
-  //   ),
-  //   accessor: 'joined_day',
-  // },
+  
   {
     Header: (props) => (
       <UserCustomHeader tableProps={props} title='Actions' className='text-end min-w-100px' />

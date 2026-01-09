@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useListView } from '../../core/ListViewProvider'
-import { UsersListToolbar } from './UserListToolbar'
-import { UsersListGrouping } from './UsersListGrouping'
+
+
 import { UsersListSearchComponent } from './UsersListSearchComponent'
-import DocumentProcess from './DocumentProcess';
-import FileUpload from './FileUpload';
+
+
 import request, { gql } from 'graphql-request';
 import BASEURL from '../../../../../../config/baseurl';
 import { DocumentListHead } from './DocumentListHead';
@@ -44,9 +44,6 @@ const UsersListHeader = () => {
         {/* begin::Group actions */}
         {
           <div className='card-toolbar'>
-            {/* <UsersListToolbar /> */}
-            {/* <FileUpload /> */}
-            {/* <DocumentProcess /> */}
           </div>}
       </div>
 

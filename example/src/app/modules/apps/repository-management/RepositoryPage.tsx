@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Navigate, Outlet, Route, Routes, useParams } from 'react-router-dom'
 import { PageLink, PageTitle } from '../../../../_metronic/layout/core'
 // import { UsersListWrapper } from './users-list/UsersList'
-import DocumentList from './DocumentList'
+
 import { UsersListWrapper } from './users-list/UsersList';
 import { useListView } from '../project-management/users-list/core/ListViewProvider';
 import request, { gql } from 'graphql-request';
@@ -67,7 +67,7 @@ const UsersPage = () => {
               {/* <PageTitle>Project: {projectName}</PageTitle> */}
               <PageTitle >Repository Files</PageTitle>
               <UsersListWrapper />
-              {/* <DocumentList /> */}
+
             </>
           }
         />

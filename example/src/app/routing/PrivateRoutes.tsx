@@ -14,14 +14,12 @@ import EditCatalog from '../modules/apps/catalog-management/users-list/table/cat
 
 const PrivateRoutes = () => {
   const ProjectsPage = lazy(() => import('../modules/apps/project-management/UsersPage'))
-  const DataPage = lazy(() => import('../modules/apps/data-management/UsersPage'))
   const UsersPage = lazy(() => import('../modules/apps/user-management/UsersPage'))
   const ViewerPage = lazy(() => import('../modules/apps/viewer-management/ViewersPage'))
   const CatalogPage = lazy(() => import('../modules/apps/catalog-management/UsersPage'))
   const DocumentsPage = lazy(() => import('../modules/apps/document-management/UsersPage'))
   const BarChartDocument = lazy(() => import('../modules/apps/barchart-management/UsersPage'))
   const PieChartDocument = lazy(() => import('../modules/apps/piechart-management/UsersPage'))
-  const DataPage1 = lazy(() => import('../modules/apps/data-view/UsersPage'))
   const Catalog = lazy(() => import('../modules/apps/catalog/CatalogManagementPage'))
   const SettingsPage = lazy(() => import('../modules/apps/app-management/SettingsPage'))
   const DataviewPage = lazy(() => import('../modules/apps/dataview/DataviewPage'))
@@ -67,14 +65,6 @@ const PrivateRoutes = () => {
           }
         />
         <Route
-          path='/data-management/*'
-          element={
-            <SuspensedView>
-              <DataPage />
-            </SuspensedView>
-          }
-        />
-        <Route
           path='/user-list/*'
           element={
             <SuspensedView>
@@ -106,14 +96,7 @@ const PrivateRoutes = () => {
             </SuspensedView>
           }
         />
-        <Route
-          path='/dataview-management/*'
-          element={
-            <SuspensedView>
-              <DataPage1 />
-            </SuspensedView>
-          }
-        />
+
         <Route
           path='/piechart-management/*'
           element={

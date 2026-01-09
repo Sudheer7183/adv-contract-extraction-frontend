@@ -1,7 +1,6 @@
 import React from 'react';
 import { useListView } from '../../core/ListViewProvider'
 import { UsersListToolbar } from './UserListToolbar'
-import { UsersListGrouping } from './UsersListGrouping'
 import { UsersListSearchComponent } from './UsersListSearchComponent'
 import DocumentProcess from './DocumentProcess';
 

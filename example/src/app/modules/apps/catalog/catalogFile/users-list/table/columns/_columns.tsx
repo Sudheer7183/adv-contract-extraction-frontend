@@ -1,20 +1,20 @@
 // @ts-nocheck
 import React from 'react';
 import { Column } from 'react-table'
-import { UserInfoCell } from './UserInfoCell'
+
 import { FileType, UserLastLoginCell } from './FileType'
 // import { UserTwoStepsCell } from './UserTwoStepsCell'
 import { UserActionsCell } from './UserActionsCell'
-import { UserFileOpenCell } from './UserFileOpenCell'
-import { UserSelectionCell } from './UserSelectionCell'
+
+
 import { UserCustomHeader } from './UserCustomHeader'
-import { UserSelectionHeader } from './UserSelectionHeader'
+
 import { User } from '../../core/_models'
-import { FileName } from './FileName';
+
 import { FileType } from './FileType';
-import { FileStatus } from './FileStatus';
-import { FilePages } from './FilePages';
-import { LockStatus } from './LockStatus';
+
+
+
 import { Actions } from './Actions';
 import { ProjectName } from './ProjectName';
 import { Expand } from './Expand';

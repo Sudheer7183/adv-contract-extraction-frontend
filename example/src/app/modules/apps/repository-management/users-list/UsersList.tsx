@@ -4,13 +4,13 @@ import { QueryRequestProvider } from './core/QueryRequestProvider'
 import { QueryResponseProvider } from './core/QueryResponseProvider'
 import { UsersListHeader } from './components/header/UsersListHeader'
 import { UsersTable } from './table/UsersTable'
-import { UserEditModal } from './user-edit-modal/UserEditModal'
+
 import { KTCard } from '../../../../../_metronic/helpers'
 import { useAuth } from '../../../auth';
 import { ReviewTable } from './table/ReviewTable';
 
 const UsersList = () => {
-  const { fileUpload, userAssign, contractAssign } = useListView()
+  // const { fileUpload, userAssign, contractAssign } = useListView()
   const { currentUser } = useAuth()
   const Role = currentUser?.role
   return (
@@ -32,9 +32,6 @@ const UsersList = () => {
         </KTCard>
       )}
 
-      {fileUpload === true && <UserEditModal />}
-      {userAssign === true && <UserEditModal />}
-      {contractAssign === true && <UserEditModal />}
     </>
   )
 }

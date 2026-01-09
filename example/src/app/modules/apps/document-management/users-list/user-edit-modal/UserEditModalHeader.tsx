@@ -58,40 +58,12 @@ const UserEditModalHeader = () => {
       }
       {userAssign &&
         <div className={headertheme}>
-          {/* <div
-            onClick={handleGoBack}
-            className='btn btn-icon btn-sm btn-active-icon-light'
-          >
-            <KTIcon iconName='arrow-left' className='fs-1' />
-          </div> */}
           <h2 className='fw-bolder text-light fs-1 text-center w-100'>Assign Reviewer</h2>
-          {/* <div
-            className='btn btn-icon btn-sm btn-active-icon-light'
-            data-kt-users-modal-action='close'
-            onClick={() => handleCloseForm()}
-            style={{ cursor: 'pointer' }}
-          >
-            <KTIcon iconName='cross' className='fs-1' />
-          </div> */}
         </div>
       }
       {contractAssign &&
         <div className={headertheme}>
-          {/* <div
-            onClick={handleGoBack}
-            className='btn btn-icon btn-sm btn-active-icon-light'
-          >
-            <KTIcon iconName='arrow-left' className='fs-1' />
-          </div> */}
           <h2 className='fw-bolder text-light fs-1 text-center w-100'>Assign Contract Type</h2>
-          {/* <div
-            className='btn btn-icon btn-sm btn-active-icon-light'
-            data-kt-users-modal-action='close'
-            onClick={() => handleCloseForm()}
-            style={{ cursor: 'pointer' }}
-          >
-            <KTIcon iconName='cross' className='fs-1' />
-          </div> */}
         </div>
       }
     </div>
