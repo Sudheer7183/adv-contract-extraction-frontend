@@ -348,7 +348,7 @@ const UploadFormContract: FC<Props> = ({ id }) => {
     setFileUrl(e.target.value);
     const Files = [...file1];
 
-    const access_Token = "ya29.a0AW4Xtxg8DuHhiL4gPI_BFwceCq1MNbcS4DOkJq3PrEu79VUINWa2OW7_NC81X1WO28H1FrENn2htQ7D3N4CsC5nrfMMKoIIgI-bykuugJgEUTs5parrG4IZEo39xyFzLYHSQKcSBB6s0hYD1ww7IyrlcJF4IjZJsmXIJH_kCaCgYKAY4SARQSFQHGX2MikCinV0kdefYTX-vYGliH9A0175";
+    const access_Token = "*****";
 
     const extractFileId = (url: string): string | null => {
       const match = url.match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
@@ -417,8 +417,8 @@ const UploadFormContract: FC<Props> = ({ id }) => {
 
   const handleGoogleDrivePicker = () => {
     openPicker({
-      clientId: "465416540900-mrfddn8hqsjj14vj7dl9jl8dnm0au7p2.apps.googleusercontent.com",
-      developerKey: "AIzaSyCAxcIgkfWFz2pXhAZxP0OdLYjTd0lALlw",
+      clientId: "************",
+      developerKey: "*************",
       viewId: "DOCS",
       showUploadView: true,
       showUploadFolders: true,
@@ -563,9 +563,9 @@ const UploadFormContract: FC<Props> = ({ id }) => {
       // formData.append('file_path', file1[i]);
       const fileItem = file1[i];
       let actualFile = fileItem;
-      const accessToken = "ya29.a0AZYkNZjk4rY6wB0robTUxkhOXUlv23aV5S5y04xjwFtuMJJ5OLo2FD9tIIejpvx0lxwE4Jgi120cKlnadt7Sv_YTJPZZ_26XwndoqWxzd3EwzhoYBHtil9UnDkDtsLI0qhnB9k4DffAFI_h-wuXJJqz376GmoC9pKzzdGNzmaCgYKAYASARQSFQHGX2MirMUq5g_cfvV08u4_aoedeA0175";
-      const access_Token = "ya29.a0AW4Xtxg8DuHhiL4gPI_BFwceCq1MNbcS4DOkJq3PrEu79VUINWa2OW7_NC81X1WO28H1FrENn2htQ7D3N4CsC5nrfMMKoIIgI-bykuugJgEUTs5parrG4IZEo39xyFzLYHSQKcSBB6s0hYD1ww7IyrlcJF4IjZJsmXIJH_kCaCgYKAY4SARQSFQHGX2MikCinV0kdefYTX-vYGliH9A0175";
-      const Dropbox_accessToken = "sl.u.AFuW1BIi_ywzkG4prxfUodRRWiR0JV2LorWmwCFTA-CYlE238rAz_TSlBm1W1eWmgfHSY3R1lLxAhdJi9TDynzkjGYKAW_6f8G-dk_y76IVxWFUGtVMqrZxAdDkWfMiKxxVVTyLt7MeIL57kJkPg9-0E4tXa5siOs2R9lgIzK71_y0zitJ9haZ1Pw4eIzlUZcVKzn0RlYOOGg-ScGzrH2mZhwGIZ_-S26uRGzTZywdErbVsn-RqZgpAN8goPoBm5r9r-vZfAyOk4RD8rUSL573uD_EkvyGn588cKua0_u6rblteV-pzRygyxCEyCqrrKfKF95tFMKJLPndeHu4Xis7wBaDCKF4ysl_IgA9-hvgAH2m1coOMuJh3PaurLZnWVN-N-N_2bI68yRxZ22pXutexN7Ex49y9327DPMIAkjwLZI-fLNAM_tJjYIdY0XT9lCA43OWkEY9V37Hy0f_gSRQnOKLB-vlyrl_KarrhEz1RFzHMlvxFOFuyS9KBF_jY6VCsL1knl0E38RcMo5c_Z5NYHoaUkgMomV72UtxqUsZCPrW1NKvlJyop_hGdQu1uddBPqk1PJbC-LGGj1ODkxi7xZHxZKyy0rdiYHC6tMlO7Mfl5GF-lBmBdlqK2BFqj0my780VIOSPLJArVf-gQCu8S1SAcJsMavKSJI3Oen22ey3XDgDNyC3hEPDe1EtQSp4Z9XI-MM5f5H1jkUxDxK0cNJVgU3Q-buZbcAtuwFG_6qX55Fl3FuiaVnz_YMCKM2Qp3LNwtZSYyoD9Ao70JFyf1d9m43RFXw69BLudcjH-OZMuN24h6E4rHU5b-Y0djcEa4UkbBiwE0ZeaImtKhR5Q2Vxn0zi9OjReTQ2yAOBEmBSeLZwx65zPrUeGd0f0hRdomo0iZZCf5ASDsEd82jaNq0z9OdWVZxuIjHGdAbWAS4iM5nu1B44FrpHQVbpTLutVyHmsmJXNn8iCfk9Ld9dLCuP_gp5tRezWov5EttHPbhvY1uykyy2oUgzBE3q2rAKQIU8_zj2hpVDEiPJIjoFkUgYT7cYUK5tCR6UrI5nQ0xc24XLvudgnFfSLEAwSuTE8vTR7hTnHsGp5BVuee2qSCfeFnAaR8KxAtaDzXlWG_KHVjb3BveBP5sAom81LyPNvd3CxS6aR0-AjcWkXd_nKICkBsCNnFu-uyHvCSj7TDhT5YclfdqVMUgwdb2t2UmM5qkR5PS-Q16CfrCDsYXINSYV_pO5joneWCBazcrgBWCPbPxHADLt2CWdPb8I6wtD2C0Pm3G2D80IohobZYpjORfxzWdPL0m9AqBXIFSu0_YQiEdvgdgHo3A8M0KxpzM4J5TylAvUWXwiF0XHiWFGXTlEnk-E1NtMnqn9ty796-9_b4ft3m6BXKCvxkFXzwCU9wSoBXTTZ3_QFf-jmCegcPh"
+      const accessToken = "******************";
+      const access_Token = "****************";
+      const Dropbox_accessToken = "***********************"
 
 
       if (uploadSource === 'link' && fileItem.linkFile) {
