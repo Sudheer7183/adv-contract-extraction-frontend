@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { useQueryClient, useMutation } from 'react-query'
+// import { useQueryClient, useMutation } from '@tanstack/react-query'
 // import { QUERIES } from '../../../../../../../_metronic/helpers'
 import { useListView } from '../../core/ListViewProvider'
 // import { useQueryResponse } from '../../core/QueryResponseProvider'

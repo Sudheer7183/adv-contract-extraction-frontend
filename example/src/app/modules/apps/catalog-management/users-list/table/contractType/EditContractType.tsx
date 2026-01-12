@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import Select from 'react-select';
 // import { useMutation, useQuery } from '@apollo/client';
 // import { ALL_CATALOG } from "../graphql/Queries";
-import MaterialReactTable, { type MRT_RowSelectionState } from 'material-react-table';
+import { MaterialReactTable } from 'material-react-table';
 // import Home from '../pages/Home';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Alert, Snackbar, Button } from '@mui/material';
@@ -498,3 +498,4 @@ const EditContractType = () => {
 }
 
 export default EditContractType
+

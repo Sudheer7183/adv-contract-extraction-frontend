@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import MaterialReactTable from 'material-react-table'
+import { MaterialReactTable } from 'material-react-table'
 import { Box, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import ContractDetail from './ContractDetail';
@@ -104,3 +104,4 @@ const ContractType = () => {
 };
 
 export default ContractType;
+

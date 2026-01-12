@@ -2,7 +2,7 @@
 import React from 'react';
 import { Column } from 'react-table'
 
-import { UserLastLoginCell } from './UserLastLoginCell'
+// import { UserLastLoginCell } from './UserLastLoginCell'
 
 
 

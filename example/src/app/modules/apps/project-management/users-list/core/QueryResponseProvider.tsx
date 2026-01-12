@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { FC, useContext, useState, useEffect, useMemo } from 'react'
-import { useQuery } from 'react-query'
+import { useQuery } from '@tanstack/react-query'
 import {
   createResponseContext,
   initialQueryResponse,
@@ -26,17 +26,29 @@ const QueryResponseProvider: FC<WithChildren> = ({ children }) => {
     }
   }, [updatedQuery])
 
+  // const {
+  //   isFetching,
+  //   refetch,
+  //   data: response,
+  // } = useQuery(
+  //   `${QUERIES.USERS_LIST}-${query}`,
+  //   () => {
+  //     return getUsers(query)
+  //   },
+  //   { gcTime: 0, placeholderData: (previousData) => previousData, refetchOnWindowFocus: false }
+  // )
+
   const {
-    isFetching,
-    refetch,
-    data: response,
-  } = useQuery(
-    `${QUERIES.USERS_LIST}-${query}`,
-    () => {
-      return getUsers(query)
-    },
-    { cacheTime: 0, keepPreviousData: true, refetchOnWindowFocus: false }
-  )
+  isFetching,
+  refetch,
+  data: response,
+} = useQuery({
+  queryKey: [`${QUERIES.USERS_LIST}-${query}`],
+  queryFn: () => getUsers(query),
+  gcTime: 0,
+  placeholderData: (previousData) => previousData,
+  refetchOnWindowFocus: false,
+})
 
   return (
     <QueryResponseContext.Provider value={{ isLoading: isFetching, refetch, response, query }}>
@@ -82,3 +94,5 @@ export {
   useQueryResponsePagination,
   useQueryResponseLoading,
 }
+
+

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Column } from 'react-table'
 import { UserInfoCell } from './UserInfoCell'
-import { UserLastLoginCell } from './UserLastLoginCell'
+// import { UserLastLoginCell } from './UserLastLoginCell'
 import { UserTwoStepsCell } from './UserTwoStepsCell'
 import { UserActionsCell } from './UserActionsCell'
 import { UserFileOpenCell } from './UserFileOpenCell'

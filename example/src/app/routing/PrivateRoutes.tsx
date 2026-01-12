@@ -11,6 +11,8 @@ import { useAuth } from '../modules/auth';
 import Services from '../modules/apps/app-management/pages/Services';
 import EditContractType from '../modules/apps/catalog-management/users-list/table/contractType/EditContractType';
 import EditCatalog from '../modules/apps/catalog-management/users-list/table/catalogType/EditCatalog';
+import ErrorBoundary from '../ErrorBoundary';
+
 
 const PrivateRoutes = () => {
   const ProjectsPage = lazy(() => import('../modules/apps/project-management/UsersPage'))
@@ -91,9 +93,12 @@ const PrivateRoutes = () => {
         <Route
           path='/viewer-management/*'
           element={
-            <SuspensedView>
-              <ViewerPage />
-            </SuspensedView>
+            <ErrorBoundary>
+              <SuspensedView>
+                <ViewerPage />
+              </SuspensedView>
+            </ErrorBoundary>
+
           }
         />
 

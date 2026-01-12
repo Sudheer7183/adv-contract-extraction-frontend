@@ -6,7 +6,7 @@ import { request, gql } from 'graphql-request'
 import ContractType from './contractType/ContractType'
 import Catalog from './catalogType/CatalogType'
 import BASEURL from '../../../../../config/baseurl'
-// import { useQuery } from 'react-query'
+// import { useQuery } from '@tanstack/react-query'
 
 const allProject = gql`
 query {

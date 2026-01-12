@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 import { Column } from 'react-table'
-import { UserLastLoginCell } from './UserLastLoginCell'
+// import { UserLastLoginCell } from './UserLastLoginCell'
 import { UserActionsCell } from './UserActionsCell'
 import { UserSelectionCell } from './UserSelectionCell'
 import { UserCustomHeader } from './UserCustomHeader'

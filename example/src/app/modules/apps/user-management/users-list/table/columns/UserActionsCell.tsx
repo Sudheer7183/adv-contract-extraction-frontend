@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { FC, useEffect } from 'react'
-import { useMutation, useQueryClient } from 'react-query'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { MenuComponent } from '../../../../../../../_metronic/assets/ts/components'
 import { ID, KTIcon, QUERIES } from '../../../../../../../_metronic/helpers'
 import { useListView } from '../../core/ListViewProvider'
@@ -24,13 +24,20 @@ const UserActionsCell: FC<Props> = ({ id }) => {
     setItemIdForUpdate(id)
   }
 
-  const deleteItem = useMutation(() => deleteUser(id), {
-    // 💡 response of the mutation is passed to onSuccess
-    onSuccess: () => {
-      // ✅ update detail view directly
-      queryClient.invalidateQueries([`${QUERIES.USERS_LIST}-${query}`])
-    },
-  })
+  // const deleteItem = useMutation({ mutationFn: () => deleteUser(id),
+  //   // 💡 response of the mutation is passed to onSuccess
+  //   onSuccess: () => {
+  //     // ✅ update detail view directly
+  //     queryClient.invalidateQueries([`${QUERIES.USERS_LIST}-${query}`])
+  //   },
+  // })
+
+  const deleteItem = useMutation({
+  mutationFn: () => deleteUser(id),
+  onSuccess: () => {
+    queryClient.invalidateQueries({ queryKey: [`${QUERIES.USERS_LIST}-${query}`] })
+  },
+})
 
   return (
     <>
@@ -74,3 +81,5 @@ const UserActionsCell: FC<Props> = ({ id }) => {
 }
 
 export { UserActionsCell }
+
+

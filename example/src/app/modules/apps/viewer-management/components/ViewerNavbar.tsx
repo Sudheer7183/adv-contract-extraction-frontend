@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { TbPlayerTrackPrev, TbPlayerTrackNext } from 'react-icons/tb'
 import type { IHighlight } from "../react-pdf-highlighter";
-import { Grid, IconButton, Toolbar } from "@material-ui/core";
+import { Grid, IconButton, Toolbar } from "@mui/material";
 import { MdOutlineClose } from 'react-icons/md';
 // import { GiExitDoor } from 'react-icons/gi'
 import { useNavigate } from 'react-router-dom';

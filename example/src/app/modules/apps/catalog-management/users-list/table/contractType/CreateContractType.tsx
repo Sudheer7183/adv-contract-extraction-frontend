@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import axios from "axios";
 import Select from 'react-select';
-import MaterialReactTable, { type MRT_RowSelectionState } from 'material-react-table';
+import { MaterialReactTable } from 'material-react-table';
 import { useNavigate } from 'react-router-dom';
 import { Alert, Snackbar, Button } from '@mui/material';
 import request, { gql } from 'graphql-request';
@@ -484,3 +484,4 @@ const CreateContractType = () => {
 
 
 export default CreateContractType
+

@@ -2,8 +2,9 @@
 // @ts-nocheck
 import React, { useState, useEffect, useRef } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import Highlight, { defaultProps, Language } from 'prism-react-renderer'
-import theme from 'prism-react-renderer/themes/shadesOfPurple'
+// import Highlight, { defaultProps, Language } from 'prism-react-renderer'
+import { Highlight, themes } from 'prism-react-renderer'
+// import { themes } from 'prism-react-renderer'
 import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 
 type Props = {

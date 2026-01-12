@@ -1,5 +1,5 @@
 import React from 'react';
-import { useQuery } from 'react-query'
+import { useQuery } from '@tanstack/react-query'
 import { UserEditModalForm } from './UserEditModalForm'
 import { isNotEmpty, QUERIES } from '../../../../../../../_metronic/helpers'
 import { useListView } from '../core/ListViewProvider1'
@@ -25,7 +25,7 @@ const UserEditModalFormWrapper = () => {
       return getUserById(itemIdForUpdate)
     },
     {
-      cacheTime: 0,
+      gcTime: 0,
       enabled: enabledQuery,
       onError: (err) => {
         setItemIdForUpdate(undefined)
@@ -64,4 +64,6 @@ const UserEditModalFormWrapper = () => {
 
 
 export { UserEditModalFormWrapper }
+
+
 

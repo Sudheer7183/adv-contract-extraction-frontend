@@ -6,8 +6,8 @@
 // import { useFormik } from 'formik'
 // import { login } from '../core/_requests'
 // import { useAuth } from '../core/Auth'
-// import Visibility from '@material-ui/icons/Visibility';
-// import VisibilityOff from '@material-ui/icons/VisibilityOff';
+// import Visibility from '@mui/icons-material/Visibility';
+// import VisibilityOff from '@mui/icons-material/VisibilityOff';
 // import { Avatar, Alert, Snackbar, Button, IconButton, TextField } from '@mui/material';
 // import request, { gql } from 'graphql-request';
 // import BASEURL from '../../../config/baseurl';
@@ -207,7 +207,7 @@
 // import React, { useState } from 'react';
 // import { useFormik } from 'formik';
 // import * as Yup from 'yup';
-// import { Visibility, VisibilityOff } from '@material-ui/icons';
+// import { Visibility, VisibilityOff } from '@mui/icons-material';
 // import { IconButton, TextField } from '@mui/material';
 // import { Link } from 'react-router-dom';
 // import { login } from '../core/_requests';
@@ -419,7 +419,7 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { Visibility, VisibilityOff } from '@material-ui/icons';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { IconButton, TextField } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { login } from '../core/_requests';

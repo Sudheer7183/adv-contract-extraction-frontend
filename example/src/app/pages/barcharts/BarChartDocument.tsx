@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import { Box, Button, LinearProgress } from '@mui/material';
 import { Alert, Snackbar } from '@mui/material';
 import LockPersonIcon from '@mui/icons-material/LockPerson';
-import MaterialReactTable from 'material-react-table';
+import { MaterialReactTable } from 'material-react-table';
 import request, { gql } from 'graphql-request';
 import BASEURL from '../../config/baseurl';
 
@@ -363,3 +363,4 @@ const BarChartDocument = () => {
 
 
 export default BarChartDocument
+

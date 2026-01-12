@@ -11,7 +11,7 @@ import { UserCustomHeader } from './UserCustomHeader'
 import { UserSelectionHeader } from './UserSelectionHeader'
 import { User } from '../../core/_models'
 import { FileName } from './FileName';
-import { FileType } from './FileType';
+// import { FileType } from './FileType';
 import { FileStatus } from './FileStatus';
 import { FilePages } from './FilePage';
 import { LockStatus } from './LockStatus';

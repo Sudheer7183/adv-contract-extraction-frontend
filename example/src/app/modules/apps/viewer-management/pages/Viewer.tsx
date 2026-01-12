@@ -433,7 +433,6 @@ function Viewer() {
         console.log("highlight", highlight)
         console.log("HighlightId", id)
         const url2 = `${BASEURL}jsonfile/${foldername}/${name}/${id}/`
-        // const url2 = `${http://127.0.0.1:8000/api/}jsonfile/${foldername}/${name}/${id}/`;
         axios.delete(url2,
 {            headers: {
                 'content-type': "text/plain",
